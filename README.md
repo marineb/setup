@@ -1,1 +1,4 @@
-# atom-stylesheet
+# Personal Setup
+
+* Atom stylesheet
+* Terminal theme
