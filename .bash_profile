@@ -15,13 +15,13 @@
     # Define some local colors
     local         RED="\[\033[0;31m\]" # This syntax is some weird bash color thing I never
     local   LIGHT_RED="\[\033[1;31m\]" # really understood
-    local        CHAR="♥"
+    local        CHAR="$"
     local   BLUE="\[\e[0;49;34m\]"
 
     # ♥ ☆ - Keeping some cool ASCII Characters for reference
 
     # Here is where we actually export the PS1 Variable which stores the text for your prompt
-    export PS1="\[\e]2;\u@\h\a[\[\e[37;44;1m\]\t\[\e[0m\]]$RED\$(parse_git_branch) \[\e[32m\]\W\[\e[0m\]\n\[\e[0;31m\]$BLUE//$RED $CHAR \[\e[0m\]"
+    export PS1="$RED\$(parse_git_branch) \[\e[32m\]\W\[\e[0m\]\n\[\e[0;31m\]$RED $CHAR \[\e[0m\]"
       PS2='> '
       PS4='+ '
     }
@@ -64,9 +64,6 @@
     export GIT_EDITOR="subl -w"
     export EDITOR="subl -w"
 
-    # Version
-    # What version of the Flatiron School bash profile this is
-    export FLATIRON_VERSION='1.1.1'
   # Paths
 
     # The USR_PATHS variable will just store all relevant /usr paths for easier usage
