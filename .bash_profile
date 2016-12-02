@@ -7,21 +7,25 @@
 
   # This function is called in your prompt to output your active git branch.
   function parse_git_branch {
-    git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+    git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
   }
 
   # This function builds your prompt. It is called below
   function prompt {
     # Define some local colors
-    local         RED="\[\033[0;31m\]" # This syntax is some weird bash color thing I never
-    local   LIGHT_RED="\[\033[1;31m\]" # really understood
-    local        CHAR="$"
-    local   BLUE="\[\e[0;49;34m\]"
+    local         RED="\[\033[0;31m\]" 
+    local   LIGHT_RED="\[\033[1;31m\]" 
+    local        CHAR="$"    
+    local      PURPLE="\[\e[0;49;34m\]"
+    local    BABYBLUE="\[\e[38;5;117m\]" # this is using the 256 colors
+    local        BLUE="\[\e[38;5;33m\]" # this is using the 256 colors
 
     # ♥ ☆ - Keeping some cool ASCII Characters for reference
 
     # Here is where we actually export the PS1 Variable which stores the text for your prompt
-    export PS1="$RED\$(parse_git_branch) \[\e[32m\]\W\[\e[0m\]\n\[\e[0;31m\]$RED $CHAR \[\e[0m\]"
+    # \[\e[0m\] -> this ends the color
+    # current format: directory (branch) $ (I also have added an extra break at the top). 
+    export PS1="\n$BLUE\W $RED\$(parse_git_branch) $CHAR \[\e[0m\]"
       PS2='> '
       PS4='+ '
     }
