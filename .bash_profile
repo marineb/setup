@@ -61,12 +61,12 @@
     export GIT_MERGE_AUTOEDIT='no'
 
     # Editors
-    # Tells your shell that when a program requires various editors, use sublime.
-    # The -w flag tells your shell to wait until sublime exits
-    export VISUAL="subl -w"
-    export SVN_EDITOR="subl -w"
-    export GIT_EDITOR="subl -w"
-    export EDITOR="subl -w"
+    # Tells your shell that when a program requires various editors.
+    # The -w flag tells your shell to wait until vim exits
+    export VISUAL="vim -w"
+    export SVN_EDITOR="vim -w"
+    export GIT_EDITOR="vim -w"
+    export EDITOR="vim -w"
 
   # Paths
 
