@@ -63,10 +63,10 @@
     # Editors
     # Tells your shell that when a program requires various editors.
     # The -w flag tells your shell to wait until vim exits
-    export VISUAL="vim -w"
-    export SVN_EDITOR="vim -w"
-    export GIT_EDITOR="vim -w"
-    export EDITOR="vim -w"
+    # export VISUAL="vim -w"
+    # export SVN_EDITOR="vim -w"
+    # export GIT_EDITOR="vim -w"
+    # export EDITOR="vim -w"
 
   # Paths
 
