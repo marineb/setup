@@ -25,7 +25,7 @@
     # Here is where we actually export the PS1 Variable which stores the text for your prompt
     # \[\e[0m\] -> this ends the color
     # current format: directory (branch) $ (I also have added an extra break at the top). 
-    export PS1="$RED\$(parse_git_branch)\n$BLUE\W $CHAR \[\e[0m\]"
+    export PS1="$RED\$\n😎parse_git_branch\n$BLUE\W $CHAR \[\e[0m\]"
       PS2='> '
       PS4='+ '
     }
