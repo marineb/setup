@@ -109,10 +109,10 @@ function desktop {
   cd /Users/$USER/Desktop/$@
 }
 
-# USE: work
-#      goes to my work directory :)
-function work {
-  cd /Users/$USER/Documents/en-marche.fr/$@
+# USE: em
+#      goes to my en marche directory :)
+function em {
+  cd /Users/$USER/Documents/projects/en-marche.fr/$@
 }
 
 # A function to easily grep for a matching process
