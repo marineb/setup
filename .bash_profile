@@ -133,6 +133,7 @@ function psg {
   alias gst="git status"
   alias gl="git pull"
   alias gp="git push"
+  alias gpo="git push origin"
   alias gd="git diff | mate"
   alias gc="git commit -v"
   alias gca="git commit -v -a"
