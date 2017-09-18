@@ -140,6 +140,8 @@ function psg {
   alias gba="git branch -a"
   alias gcam="git commit -am"
   alias gbb="git branch -b"
+  alias gi="git rebase -i origin/master"
+  alias gr="git rebase origin/master"
 
 
 # Case-Insensitive Auto Completion
