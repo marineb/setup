@@ -1,4 +1,6 @@
-Do once. Set the branch you're on the current branch to which you push to. 
+
+#### Set current branch as default branch
+Do this once: 
 ```
 git config --global push.default current
 ```
