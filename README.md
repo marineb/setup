@@ -4,6 +4,6 @@
 * [Terminal theme](/terminal-theme.terminal) (you'll need to download)
 * [Zsh profile](/.bash_profile)
   Pour mettre en place : 
-    * vim ~/.zshrc
-    * source ~/.zshrc 
+    * `vim ~/.zshrc`
+    * `source ~/.zshrc` 
 * [Neat things](/neat-things.md)
